@@ -20,11 +20,11 @@
   --muted-foreground: 0 0% 63%;
   --accent: 0 0% 9%;
   --accent-foreground: 0 0% 98%;
-  --destructive: 0 62% 30%;
+  --destructive: 0 62% 30%; /* Adjusted from 0 84% 60% */
   --destructive-foreground: 0 0% 98%;
   --border: 0 0% 15%;
   --input: 0 0% 15%;
-  --ring: 262 83% 58%;
+  --ring: 262 83% 58%; /* Adjusted from 0 0% 63% */
   --radius: 0.5rem;
 }
 
@@ -58,8 +58,9 @@ body {
 }
 
 .glass-effect {
-  background: rgba(15, 23, 42, 0.4);
+  background: rgba(15, 23, 42, 0.6); /* Increased opacity slightly */
   backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px); /* For Safari */
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -68,7 +69,7 @@ body {
     rgba(139, 92, 246, 0.15) 0%, 
     rgba(236, 72, 153, 0.1) 25%,
     rgba(239, 68, 68, 0.05) 50%,
-    rgba(15, 23, 42, 1) 100%
+    hsl(var(--background)) 70% /* Ensure smooth transition to background */
   );
 }
 
@@ -96,10 +97,10 @@ body {
 
 @keyframes pulse-glow {
   from {
-    box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.3), 0 0 20px rgba(236, 72, 153, 0.2);
   }
   to {
-    box-shadow: 0 0 40px rgba(139, 92, 246, 0.8);
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.6), 0 0 40px rgba(236, 72, 153, 0.4);
   }
 }
 
@@ -108,13 +109,95 @@ body {
 }
 
 .pattern-dots {
-  background-image: radial-gradient(circle, rgba(139, 92, 246, 0.1) 1px, transparent 1px);
-  background-size: 20px 20px;
+  background-image: radial-gradient(circle, rgba(139, 92, 246, 0.07) 1px, transparent 1px); /* Made dots subtler */
+  background-size: 25px 25px; /* Slightly larger pattern */
 }
 
 .pattern-grid {
   background-image: 
-    linear-gradient(rgba(139, 92, 246, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(139, 92, 246, 0.1) 1px, transparent 1px);
-  background-size: 50px 50px;
+    linear-gradient(rgba(139, 92, 246, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139, 92, 246, 0.07) 1px, transparent 1px); /* Made grid subtler */
+  background-size: 60px 60px; /* Slightly larger pattern */
+}
+
+/* React Calendar Customizations */
+.react-calendar {
+  width: 100%;
+  border: none;
+  background-color: transparent !important; /* Ensure transparent background for glass effect */
+  font-family: 'Inter', sans-serif;
+}
+
+.react-calendar__navigation button {
+  color: hsl(var(--primary-foreground));
+  min-width: 44px;
+  background: none;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: hsla(var(--accent), 0.5);
+}
+.react-calendar__navigation button[disabled] {
+  background-color: hsla(var(--muted), 0.5);
+  color: hsl(var(--muted-foreground));
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0.5em;
+  color: hsl(var(--muted-foreground));
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+.react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none;
+}
+
+.react-calendar__tile {
+  max-width: 100%;
+  padding: 10px 6.6667px;
+  background: none;
+  text-align: center;
+  line-height: 16px;
+  color: hsl(var(--foreground));
+  border-radius: var(--radius);
+}
+.react-calendar__tile:disabled {
+  background-color: transparent;
+  color: hsl(var(--muted-foreground));
+  opacity: 0.5;
+}
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: hsla(var(--accent), 0.7);
+}
+.react-calendar__tile--now {
+  background: hsla(var(--primary), 0.3);
+  font-weight: bold;
+}
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: hsla(var(--primary), 0.5);
+}
+.react-calendar__tile--hasActive {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+  background: hsl(var(--primary));
+}
+.react-calendar__tile--active {
+  background: hsl(var(--primary)) !important;
+  color: hsl(var(--primary-foreground)) !important;
+  font-weight: bold;
+}
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: hsl(var(--primary)) !important;
+}
+.react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: hsla(var(--accent), 0.7);
 }
