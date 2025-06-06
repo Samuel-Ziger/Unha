@@ -45,9 +45,9 @@ export default function Footer() {
                 <MessageCircle className="w-4 h-4 text-green-400" />
                 <span>(11) 99999-9999</span>
               </a>
-              <a href="mailto:ana@Fibradevidro.com" className="flex items-center gap-3 hover:text-purple-400 transition-colors">
+              <a href="mailto:mel@Fibradevidro.com" className="flex items-center gap-3 hover:text-purple-400 transition-colors">
                 <Mail className="w-4 h-4 text-purple-400" />
-                <span>ana@Fibradevidro.com</span>
+                <span>mel@Fibradevidro.com</span>
               </a>
               <div className="flex items-center gap-3"><Users className="w-4 h-4 text-purple-400" />
                 <span>São Paulo, SP</span>
