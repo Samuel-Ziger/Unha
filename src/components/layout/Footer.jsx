@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, Instagram, Facebook, MessageCircle, Clock, Users } from 'lucide-react';
-import { EnvelopeIcon } from '@heroicons/react/24/outline';
 
 export default function Footer() {
   return (
@@ -46,9 +45,9 @@ export default function Footer() {
                 <MessageCircle className="w-4 h-4 text-green-400" />
                 <span>(11) 99999-9999</span>
               </a>
-              <a href="mailto:mel@Fibradevidro.com" className="flex items-center gap-3 hover:text-purple-400 transition-colors">
-                <EnvelopeIcon className="w-5 h-5" />
-                <span>mel@Fibradevidro.com</span>
+              <a href="mailto:ana@Fibradevidro.com" className="flex items-center gap-3 hover:text-purple-400 transition-colors">
+                <Mail className="w-4 h-4 text-purple-400" />
+                <span>ana@Fibradevidro.com</span>
               </a>
               <div className="flex items-center gap-3"><Users className="w-4 h-4 text-purple-400" />
                 <span>São Paulo, SP</span>
