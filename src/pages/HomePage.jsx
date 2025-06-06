@@ -53,19 +53,19 @@ const testimonials = [
   {
     name: "Marina Silva",
     role: "Cliente Fiel",
-    content: "As unhas da Ana são verdadeiras obras de arte! Nunca vi um acabamento tão perfeito e duradouro.",
+    content: "As unhas da mel são verdadeiras obras de arte! Nunca vi um acabamento tão perfeito e duradouro.",
     rating: 5
   },
   {
     name: "Carla Mendes",
     role: "Influenciadora",
-    content: "Minhas seguidoras sempre perguntam onde faço minhas unhas. A técnica de Fibra de vidro da Ana é incomparável!",
+    content: "Minhas seguidoras sempre perguntam onde faço minhas unhas. A técnica de Fibra de vidro da mel é incomparável!",
     rating: 5
   },
   {
     name: "Lucia Santos",
     role: "Cliente VIP",
-    content: "Faço minhas unhas com a Ana há 2 anos e nunca me decepcionei. Profissionalismo e perfeição em cada detalhe.",
+    content: "Faço minhas unhas com a mel há 2 anos e nunca me decepcionei. Profissionalismo e perfeição em cada detalhe.",
     rating: 5
   }
 ];
@@ -79,7 +79,7 @@ const pricingPlans = [
       "Aplicação de Fibra de vidro",
       "Escolha de cores",
       "Acabamento cristalino",
-      "Duração de 3-4 semanas",
+      "Duração de 3-4 semmels",
       "Garantia de 7 dias"
     ],
     popular: false
@@ -92,7 +92,7 @@ const pricingPlans = [
       "Fibra de vidro premium",
       "Efeitos especiais",
       "Nail art básica",
-      "Duração de 4-5 semanas",
+      "Duração de 4-5 semmels",
       "Garantia de 15 dias",
       "Manutenção gratuita"
     ],
@@ -106,7 +106,7 @@ const pricingPlans = [
       "Fibra de vidro luxury",
       "Design personalizado",
       "Nail art premium",
-      "Duração de 5-6 semanas",
+      "Duração de 5-6 semmels",
       "Garantia de 21 dias",
       "2 manutenções inclusas",
       "Hidratação de mãos"
@@ -205,9 +205,11 @@ export default function HomePage() {
               variant="outline" 
               size="lg"
               className="border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white px-8 py-4 text-lg"
-              onClick={() => handleCTAClick("ver trabalhos")}
+              asChild
             >
-              Ver Trabalhos
+              <a href="https://www.instagram.com/mellgomes.__/" target="_blank" rel="noopener noreferrer">
+                Ver Trabalhos
+              </a>
             </Button>
           </motion.div>
 
