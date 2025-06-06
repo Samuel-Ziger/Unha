@@ -4,8 +4,11 @@ WORKDIR /app
 
 # Instalar dependências
 COPY package*.json ./
-RUN npm cache clean --force && \
-    npm install --legacy-peer-deps --no-audit --no-fund
+
+# Configurar npm e instalar dependências
+RUN npm config set registry https://registry.npmjs.org/ && \
+    npm cache clean --force && \
+    npm install --legacy-peer-deps --no-audit --no-fund --prefer-offline
 
 # Copiar arquivos do projeto
 COPY . .
