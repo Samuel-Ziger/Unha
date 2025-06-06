@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, Instagram, Facebook, Twitter as WhatsApp, Clock, Users } from 'lucide-react';
+import { Mail, Phone, Instagram, Facebook, MessageCircle, Clock, Users } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -24,7 +23,7 @@ export default function Footer() {
                 <Facebook className="w-5 h-5 text-white" />
               </a>
               <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
-                <WhatsApp className="w-5 h-5 text-white" />
+                <MessageCircle className="w-5 h-5 text-white" />
               </a>
             </div>
           </div>
@@ -43,7 +42,7 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Contato</h4>
             <div className="space-y-3 text-slate-400">
               <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-purple-400 transition-colors">
-                <WhatsApp className="w-4 h-4 text-green-400" />
+                <MessageCircle className="w-4 h-4 text-green-400" />
                 <span>(11) 99999-9999</span>
               </a>
               <a href="mailto:ana@vibradevidro.com" className="flex items-center gap-3 hover:text-purple-400 transition-colors">

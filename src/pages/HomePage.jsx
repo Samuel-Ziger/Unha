@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
 import { Link } from 'react-router-dom';
-import { Star, ArrowRight, Sparkles, Heart, Award, Users, CheckCircle, Mail, Phone, Instagram, Facebook, Twitter as WhatsApp, Clock, Gem, Scissors, Palette } from 'lucide-react';
+import { Star, ArrowRight, Sparkles, Heart, Award, Users, CheckCircle, Mail, Phone, Instagram, Facebook, MessageCircle, Clock, Gem, Scissors, Palette } from 'lucide-react';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -199,7 +198,7 @@ export default function HomePage() {
               className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 text-lg font-semibold pulse-glow"
             >
               <Link to="/agendamento">
-                Agendar Horário <WhatsApp className="ml-2 w-5 h-5" />
+                Agendar Horário <MessageCircle className="ml-2 w-5 h-5" />
               </Link>
             </Button>
             <Button 
@@ -578,7 +577,7 @@ export default function HomePage() {
                 className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-12 py-4 text-lg font-semibold pulse-glow"
               >
                 <Link to="/agendamento">
-                  Agendar Agora <WhatsApp className="ml-2 w-5 h-5" />
+                  Agendar Agora <MessageCircle className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
               <Button 
