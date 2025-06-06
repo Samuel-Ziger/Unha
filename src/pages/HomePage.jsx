@@ -205,11 +205,9 @@ export default function HomePage() {
               variant="outline" 
               size="lg"
               className="border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white px-8 py-4 text-lg"
-              asChild
+              onClick={() => handleCTAClick("ver trabalhos")}
             >
-              <a href="https://www.instagram.com/mellgomes.__/" target="_blank" rel="noopener noreferrer">
-                Ver Trabalhos
-              </a>
+              Ver Trabalhos
             </Button>
           </motion.div>
 
