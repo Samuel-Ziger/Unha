@@ -4,7 +4,8 @@ WORKDIR /app
 
 # Instalar dependências
 COPY package*.json ./
-RUN npm install
+RUN npm cache clean --force && \
+    npm install --legacy-peer-deps --no-audit --no-fund
 
 # Copiar arquivos do projeto
 COPY . .
