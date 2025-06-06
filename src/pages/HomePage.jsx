@@ -53,19 +53,19 @@ const testimonials = [
   {
     name: "Marina Silva",
     role: "Cliente Fiel",
-    content: "As unhas da mel são verdadeiras obras de arte! Nunca vi um acabamento tão perfeito e duradouro.",
+    content: "As unhas da ana são verdadeiras obras de arte! Nunca vi um acabamento tão perfeito e duradouro.",
     rating: 5
   },
   {
     name: "Carla Mendes",
     role: "Influenciadora",
-    content: "Minhas seguidoras sempre perguntam onde faço minhas unhas. A técnica de Fibra de vidro da mel é incomparável!",
+    content: "Minhas seguidoras sempre perguntam onde faço minhas unhas. A técnica de Fibra de vidro da ana é incomparável!",
     rating: 5
   },
   {
     name: "Lucia Santos",
     role: "Cliente VIP",
-    content: "Faço minhas unhas com a mel há 2 anos e nunca me decepcionei. Profissionalismo e perfeição em cada detalhe.",
+    content: "Faço minhas unhas com a ana há 2 anos e nunca me decepcionei. Profissionalismo e perfeição em cada detalhe.",
     rating: 5
   }
 ];
@@ -79,7 +79,7 @@ const pricingPlans = [
       "Aplicação de Fibra de vidro",
       "Escolha de cores",
       "Acabamento cristalino",
-      "Duração de 3-4 semmels",
+      "Duração de 3-4 semanas",
       "Garantia de 7 dias"
     ],
     popular: false
@@ -92,7 +92,7 @@ const pricingPlans = [
       "Fibra de vidro premium",
       "Efeitos especiais",
       "Nail art básica",
-      "Duração de 4-5 semmels",
+      "Duração de 4-5 semanas",
       "Garantia de 15 dias",
       "Manutenção gratuita"
     ],
@@ -106,7 +106,7 @@ const pricingPlans = [
       "Fibra de vidro luxury",
       "Design personalizado",
       "Nail art premium",
-      "Duração de 5-6 semmels",
+      "Duração de 5-6 semanas",
       "Garantia de 21 dias",
       "2 manutenções inclusas",
       "Hidratação de mãos"
@@ -207,7 +207,7 @@ export default function HomePage() {
               className="border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white px-8 py-4 text-lg"
               asChild
             >
-              <a href="https://www.instagram.com/mellgomes.__/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/analgomes.__/" target="_blank" rel="noopener noreferrer">
                 Ver Trabalhos
               </a>
             </Button>
@@ -245,7 +245,7 @@ export default function HomePage() {
           >
             <motion.div variants={fadeInUp}>
               <h2 className="text-4xl md:text-5xl font-bold mb-8">
-                Sobre <span className="gradient-text">Mel</span>
+                Sobre <span className="gradient-text">ana</span>
               </h2>
               <p className="text-lg text-slate-300 mb-6 leading-relaxed">
                 Especialista em unhas de Fibra de vidro, dedico-me há mais de 5 anos a transformar 
@@ -253,7 +253,7 @@ export default function HomePage() {
                 perfeito e duradouro, com designs exclusivos para cada cliente.
               </p>
               <p className="text-lg text-slate-300 mb-8 leading-relaxed">
-                Trabalho com os melhores produtos do mercado e estou sempre me atualizando com as 
+                Trabalho com os anahores produtos do mercado e estou sempre me atualizando com as 
                 últimas tendências para oferecer um serviço premium e resultados extraordinários.
               </p>
               
@@ -477,7 +477,7 @@ export default function HomePage() {
               <span className="gradient-text">Serviços</span> e Valores
             </h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              Escolha o serviço que melhor se adequa ao seu estilo. 
+              Escolha o serviço que anahor se adequa ao seu estilo. 
               Todos incluem técnica exclusiva de Fibra de vidro.
             </p>
           </motion.div>

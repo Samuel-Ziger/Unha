@@ -37,7 +37,7 @@ export default function Navbar() {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2 text-2xl font-bold gradient-text">
           <Sparkles className="w-7 h-7" />
-          Mel
+          ana
         </Link>
 
         <div className="hidden md:flex items-center space-x-6">
