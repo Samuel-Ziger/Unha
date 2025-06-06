@@ -12,7 +12,7 @@ export default function Footer() {
               <Link to="/">Mel</Link>
             </h3>
             <p className="text-slate-400 mb-6 leading-relaxed">
-              Especialista em unhas de Fibra de vidro, transformando unhas comuns 
+              Especialista em unhas de vibra de vidro, transformando unhas comuns 
               em obras de arte com acabamento premium e designs exclusivos.
             </p>
             <div className="flex gap-4">
@@ -45,9 +45,9 @@ export default function Footer() {
                 <MessageCircle className="w-4 h-4 text-green-400" />
                 <span>(11) 99999-9999</span>
               </a>
-              <a href="mailto:ana@Fibradevidro.com" className="flex items-center gap-3 hover:text-purple-400 transition-colors">
+              <a href="mailto:ana@vibradevidro.com" className="flex items-center gap-3 hover:text-purple-400 transition-colors">
                 <Mail className="w-4 h-4 text-purple-400" />
-                <span>ana@Fibradevidro.com</span>
+                <span>ana@vibradevidro.com</span>
               </a>
               <div className="flex items-center gap-3"><Users className="w-4 h-4 text-purple-400" />
                 <span>São Paulo, SP</span>
@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-800 pt-8 text-center text-slate-400">
-          <p>&copy; {new Date().getFullYear()} Mel - Unhas de Fibra de Vidro. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Mel - Unhas de Vibra de Vidro. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
