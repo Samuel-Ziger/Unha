@@ -53,19 +53,19 @@ const testimonials = [
   {
     name: "Marina Silva",
     role: "Cliente Fiel",
-    content: "As unhas da Ana são verdadeiras obras de arte! Nunca vi um acabamento tão perfeito e duradouro.",
+    content: "As unhas da Mel são verdadeiras obras de arte! Nunca vi um acabamento tão perfeito e duradouro.",
     rating: 5
   },
   {
     name: "Carla Mendes",
     role: "Influenciadora",
-    content: "Minhas seguidoras sempre perguntam onde faço minhas unhas. A técnica de Fibra de vidro da Ana é incomparável!",
+    content: "Minhas seguidoras sempre perguntam onde faço minhas unhas. A técnica de Fibra de vidro da Mel é incomparável!",
     rating: 5
   },
   {
     name: "Lucia Santos",
     role: "Cliente VIP",
-    content: "Faço minhas unhas com a Ana há 2 anos e nunca me decepcionei. Profissionalismo e perfeição em cada detalhe.",
+    content: "Faço minhas unhas com a Mel há 2 anos e nunca me decepcionei. Profissionalismo e perfeição em cada detalhe.",
     rating: 5
   }
 ];
