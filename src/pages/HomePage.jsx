@@ -27,23 +27,23 @@ const scaleIn = {
 
 const portfolioItems = [
   {
-    title: "Vibra Cristal",
+    title: "Fibra Cristal",
     description: "Design elegante com acabamento cristalino e brilhos delicados",
-    technique: "Vibra de vidro com glitter holográfico",
+    technique: "Fibra de vidro com glitter holográfico",
     price: "R$ 150",
     image: "https://images.unsplash.com/photo-1585218334422-2ed3196f51c3"
   },
   {
-    title: "Vibra Premium",
+    title: "Fibra Premium",
     description: "Acabamento espelhado com efeitos únicos e duração prolongada",
-    technique: "Vibra de vidro com efeito cromado",
+    technique: "Fibra de vidro com efeito cromado",
     price: "R$ 180",
     image: "https://images.unsplash.com/photo-1585218334422-2ed3196f51c3"
   },
   {
-    title: "Vibra Art",
+    title: "Fibra Art",
     description: "Design artístico personalizado com detalhes exclusivos",
-    technique: "Vibra de vidro com nail art",
+    technique: "Fibra de vidro com nail art",
     price: "R$ 200",
     image: "https://images.unsplash.com/photo-1585218334422-2ed3196f51c3"
   }
@@ -59,7 +59,7 @@ const testimonials = [
   {
     name: "Carla Mendes",
     role: "Influenciadora",
-    content: "Minhas seguidoras sempre perguntam onde faço minhas unhas. A técnica de vibra de vidro da Ana é incomparável!",
+    content: "Minhas seguidoras sempre perguntam onde faço minhas unhas. A técnica de Fibra de vidro da Ana é incomparável!",
     rating: 5
   },
   {
@@ -72,11 +72,11 @@ const testimonials = [
 
 const pricingPlans = [
   {
-    name: "Vibra Básico",
+    name: "Fibra Básico",
     price: "R$ 150",
     description: "Perfeito para sua primeira experiência",
     features: [
-      "Aplicação de vibra de vidro",
+      "Aplicação de Fibra de vidro",
       "Escolha de cores",
       "Acabamento cristalino",
       "Duração de 3-4 semanas",
@@ -85,11 +85,11 @@ const pricingPlans = [
     popular: false
   },
   {
-    name: "Vibra Premium",
+    name: "Fibra Premium",
     price: "R$ 180",
     description: "Nossa opção mais procurada",
     features: [
-      "Vibra de vidro premium",
+      "Fibra de vidro premium",
       "Efeitos especiais",
       "Nail art básica",
       "Duração de 4-5 semanas",
@@ -99,11 +99,11 @@ const pricingPlans = [
     popular: true
   },
   {
-    name: "Vibra Luxury",
+    name: "Fibra Luxury",
     price: "R$ 220",
     description: "Experiência completa e exclusiva",
     features: [
-      "Vibra de vidro luxury",
+      "Fibra de vidro luxury",
       "Design personalizado",
       "Nail art premium",
       "Duração de 5-6 semanas",
@@ -131,7 +131,7 @@ const processSteps = [
   {
     step: "03",
     title: "Aplicação",
-    description: "Aplicação da técnica de vibra de vidro com precisão",
+    description: "Aplicação da técnica de Fibra de vidro com precisão",
     icon: <Gem className="w-8 h-8" />
   },
   {
@@ -167,7 +167,7 @@ export default function HomePage() {
           <motion.div variants={fadeInUp} className="mb-8">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect text-sm font-medium mb-6">
               <Sparkles className="w-4 h-4 text-purple-400" />
-              Especialista em Unhas de Vibra de Vidro
+              Especialista em Unhas de Fibra de Vidro
             </span>
           </motion.div>
 
@@ -184,7 +184,7 @@ export default function HomePage() {
             variants={fadeInUp}
             className="text-xl md:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed"
           >
-            Especialista em unhas de vibra de vidro, crio designs únicos que combinam 
+            Especialista em unhas de Fibra de vidro, crio designs únicos que combinam 
             beleza, durabilidade e sofisticação em cada detalhe.
           </motion.p>
 
@@ -246,7 +246,7 @@ export default function HomePage() {
                 Sobre <span className="gradient-text">Mel</span>
               </h2>
               <p className="text-lg text-slate-300 mb-6 leading-relaxed">
-                Especialista em unhas de vibra de vidro, dedico-me há mais de 5 anos a transformar 
+                Especialista em unhas de Fibra de vidro, dedico-me há mais de 5 anos a transformar 
                 unhas em verdadeiras obras de arte. Minha técnica única garante um acabamento 
                 perfeito e duradouro, com designs exclusivos para cada cliente.
               </p>
@@ -287,7 +287,7 @@ export default function HomePage() {
               <div className="relative floating-animation">
                 <img  
                   className="rounded-2xl shadow-2xl w-full h-[600px] object-cover"
-                  alt="Manicure profissional aplicando unha de vibra de vidro"
+                  alt="Manicure profissional aplicando unha de Fibra de vidro"
                  src="https://images.unsplash.com/photo-1693776529863-357a5c9f5b24" />
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-900/20 to-transparent rounded-2xl"></div>
               </div>
@@ -310,7 +310,7 @@ export default function HomePage() {
               <span className="gradient-text">Trabalhos</span> em Destaque
             </h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              Cada trabalho é único, criado com técnicas exclusivas de vibra de vidro que 
+              Cada trabalho é único, criado com técnicas exclusivas de Fibra de vidro que 
               garantem beleza e durabilidade incomparáveis.
             </p>
           </motion.div>
@@ -462,7 +462,7 @@ export default function HomePage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-24 bg-slate-900/50">
+      <section id="pricing" className="py-24 bg-slate-900/50">
         <div className="container mx-auto px-6">
           <motion.div 
             className="text-center mb-16"
@@ -476,7 +476,7 @@ export default function HomePage() {
             </h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
               Escolha o serviço que melhor se adequa ao seu estilo. 
-              Todos incluem técnica exclusiva de vibra de vidro.
+              Todos incluem técnica exclusiva de Fibra de vidro.
             </p>
           </motion.div>
 
@@ -555,7 +555,7 @@ export default function HomePage() {
               className="text-xl text-slate-300 mb-12 max-w-3xl mx-auto"
             >
               Agende seu horário agora e descubra o poder transformador 
-              da técnica de vibra de vidro.
+              da técnica de Fibra de vidro.
             </motion.p>
             <motion.div 
               variants={fadeInUp}

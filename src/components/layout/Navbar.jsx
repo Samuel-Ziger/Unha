@@ -13,6 +13,7 @@ export default function Navbar() {
     { label: "Serviços", href: "/#portfolio" },
     { label: "Processo", href: "/#process" },
     { label: "Depoimentos", href: "/#testimonials" },
+    { label: "Valores", href: "/#pricing" },
   ];
 
   const scrollToSection = (id) => {
