@@ -232,7 +232,7 @@ export default function HomePage() {
       </section>
 
       {/* About Section */}
-      <section className="py-24 bg-slate-900/50">
+      <section id="about" className="py-24 bg-slate-900/50">
         <div className="container mx-auto px-6">
           <motion.div 
             className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
@@ -297,7 +297,7 @@ export default function HomePage() {
       </section>
 
       {/* Portfolio Section */}
-      <section className="py-24 pattern-grid">
+      <section id="portfolio" className="py-24 pattern-grid">
         <div className="container mx-auto px-6">
           <motion.div 
             className="text-center mb-16"
@@ -361,7 +361,7 @@ export default function HomePage() {
       </section>
 
       {/* Process Section */}
-      <section className="py-24 bg-slate-900/50">
+      <section id="process" className="py-24 bg-slate-900/50">
         <div className="container mx-auto px-6">
           <motion.div 
             className="text-center mb-16"
@@ -408,7 +408,7 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-24">
+      <section id="testimonials" className="py-24">
         <div className="container mx-auto px-6">
           <motion.div 
             className="text-center mb-16"

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Sparkles, Menu, X } from 'lucide-react';
@@ -10,16 +9,23 @@ export default function Navbar() {
 
   const navItems = [
     { label: "Início", href: "/" },
-    { label: "Sobre", href: "/#sobre" }, 
-    { label: "Serviços", href: "/#servicos" },
-    { label: "Portfólio", href: "/#portfolio" },
-    { label: "Depoimentos", href: "/#depoimentos" },
+    { label: "Sobre", href: "/#about" }, 
+    { label: "Serviços", href: "/#portfolio" },
+    { label: "Processo", href: "/#process" },
+    { label: "Depoimentos", href: "/#testimonials" },
   ];
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id.substring(2)); 
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const navHeight = 80; // altura aproximada da navbar
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
     setIsOpen(false);
   };
