@@ -202,6 +202,12 @@ export default defineConfig({
 			'Cross-Origin-Embedder-Policy': 'credentialless',
 		},
 		allowedHosts: true,
+		host: '0.0.0.0',
+		port: 3000,
+		strictPort: true,
+		watch: {
+			usePolling: true
+		}
 	},
 	resolve: {
 		extensions: ['.jsx', '.js', '.tsx', '.ts', '.json', ],
@@ -210,13 +216,25 @@ export default defineConfig({
 		},
 	},
 	build: {
+		outDir: 'dist',
+		assetsDir: 'assets',
+		sourcemap: true,
 		rollupOptions: {
 			external: [
 				'@babel/parser',
 				'@babel/traverse',
 				'@babel/generator',
 				'@babel/types'
-			]
+			],
+			output: {
+				manualChunks: {
+					vendor: ['react', 'react-dom', 'react-router-dom'],
+					ui: ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-toast']
+				}
+			}
 		}
+	},
+	optimizeDeps: {
+		include: ['react', 'react-dom', 'react-router-dom']
 	}
 });
