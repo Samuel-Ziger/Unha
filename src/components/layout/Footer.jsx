@@ -22,7 +22,7 @@ export default function Footer() {
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
                 <Facebook className="w-5 h-5 text-white" />
               </a>
-              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+              <a href="https://wa.me/5511982094492?text=Oie%20!%20gostaria%20de%20agendar%20um%20horario" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
                 <MessageCircle className="w-5 h-5 text-white" />
               </a>
             </div>
@@ -41,9 +41,9 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contato</h4>
             <div className="space-y-3 text-slate-400">
-              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-purple-400 transition-colors">
+              <a href="https://wa.me/5511982094492?text=Oie%20!%20gostaria%20de%20agendar%20um%20horario" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-purple-400 transition-colors">
                 <MessageCircle className="w-4 h-4 text-green-400" />
-                <span>(11) 99999-9999</span>
+                <span>(11) 98209-4492</span>
               </a>
               <a href="mailto:Mel@Fibradevidro.com" className="flex items-center gap-3 hover:text-purple-400 transition-colors">
                 <Mail className="w-4 h-4 text-purple-400" />

@@ -197,9 +197,9 @@ export default function HomePage() {
               size="lg" 
               className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 text-lg font-semibold pulse-glow"
             >
-              <Link to="/agendamento">
+              <a href="https://wa.me/5511982094492?text=Oie%20!%20gostaria%20de%20agendar%20um%20horario" target="_blank" rel="noopener noreferrer">
                 Agendar Horário <MessageCircle className="ml-2 w-5 h-5" />
-              </Link>
+              </a>
             </Button>
             <Button 
               variant="outline" 
@@ -353,7 +353,7 @@ export default function HomePage() {
                     asChild
                     className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700"
                   >
-                    <Link to="/agendamento">Agendar Horário</Link>
+                    <a href="https://wa.me/5511982094492?text=Oie%20!%20gostaria%20de%20agendar%20um%20horario" target="_blank" rel="noopener noreferrer">Agendar Horário</a>
                   </Button>
                 </div>
               </motion.div>
@@ -529,7 +529,7 @@ export default function HomePage() {
                       : 'bg-slate-700 hover:bg-slate-600'
                   }`}
                 >
-                   <Link to="/agendamento">Agendar Horário</Link>
+                   <a href="https://wa.me/5511982094492?text=Oie%20!%20gostaria%20de%20agendar%20um%20horario" target="_blank" rel="noopener noreferrer">Agendar Horário</a>
                 </Button>
               </motion.div>
             ))}
@@ -568,9 +568,9 @@ export default function HomePage() {
                 size="lg" 
                 className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-12 py-4 text-lg font-semibold pulse-glow"
               >
-                <Link to="/agendamento">
+                <a href="https://wa.me/5511982094492?text=Oie%20!%20gostaria%20de%20agendar%20um%20horario" target="_blank" rel="noopener noreferrer">
                   Agendar Agora <MessageCircle className="ml-2 w-5 h-5" />
-                </Link>
+                </a>
               </Button>
               <Button 
                 variant="outline" 

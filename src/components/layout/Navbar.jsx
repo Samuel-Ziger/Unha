@@ -57,7 +57,7 @@ export default function Navbar() {
             </a>
           ))}
           <Button asChild className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
-            <Link to="/agendamento">Agendar Horário</Link>
+            <a href="https://wa.me/5511982094492?text=Oie%20!%20gostaria%20de%20agendar%20um%20horario" target="_blank" rel="noopener noreferrer">Agendar Horário</a>
           </Button>
         </div>
 
@@ -96,7 +96,7 @@ export default function Navbar() {
                 </a>
               ))}
               <Button asChild className="w-full max-w-xs bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 mt-4" onClick={() => setIsOpen(false)}>
-                <Link to="/agendamento">Agendar Horário</Link>
+                <a href="https://wa.me/5511982094492?text=Oie%20!%20gostaria%20de%20agendar%20um%20horario" target="_blank" rel="noopener noreferrer">Agendar Horário</a>
               </Button>
             </div>
           </motion.div>
