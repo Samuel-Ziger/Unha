@@ -218,11 +218,11 @@ export default function HomePage() {
             className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
           >
             <div className="text-center">
-              <div className="text-3xl font-bold gradient-text">1500+</div>
+              <div className="text-3xl font-bold gradient-text">100+</div>
               <div className="text-slate-400">Clientes Satisfeitas</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold gradient-text">5 Anos</div>
+              <div className="text-3xl font-bold gradient-text">1 Anos</div>
               <div className="text-slate-400">de Experiência</div>
             </div>
             <div className="text-center">
@@ -248,7 +248,7 @@ export default function HomePage() {
                 Sobre <span className="gradient-text">Mel</span>
               </h2>
               <p className="text-lg text-slate-300 mb-6 leading-relaxed">
-                Especialista em unhas de Fibra de vidro, dedico-me há mais de 5 anos a transformar 
+                Especialista em unhas de Fibra de vidro, dedico-me  a transformar 
                 unhas em verdadeiras obras de arte. Minha técnica única garante um acabamento 
                 perfeito e duradouro, com designs exclusivos para cada cliente.
               </p>
